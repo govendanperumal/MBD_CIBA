@@ -1,0 +1,1 @@
+simOut = sim('BCM_C1A_EcuMonitor_4')
