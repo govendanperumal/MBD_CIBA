@@ -19,7 +19,7 @@ IF %stage_num%==3 (
 	goto return_value
 )
 IF %stage_num%==4 (
-	%matlabpath% -wait -log -nodesktop -nosplash -r "cd D:\1.Projects\ECU_Monitor_MIL_SIL; BCM_C1A_EcuMonitor_Constant_2; ip=getenv('mname');model_file=strtrim(ip);ret=Simmdl(model_file);pause(5);exit"
+	%matlabpath% -wait -log -nodesktop -nosplash -r "BCM_C1A_EcuMonitor_Constant_2; ip=getenv('mname');model_file=strtrim(ip);ret=Simmdl(model_file);pause(5);exit"
 	goto return_value
 )
 IF %stage_num%==5 (
